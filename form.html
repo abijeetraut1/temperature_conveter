@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature</title>
 </head>
+
 <body>
     <h2>Temperature</h2>
-    <form action="">
+    <form action="server_side/server_side.php" method="POST">
         <label for="name">Name</label><br>
-        <input type="text"><br>
-        <label for="input Temperature">Input Temperature</label><br>
-        <input type="number"><br>
-        <input type="radio" name="">
-        <label for="calsius">Calsius</label><br>
-        <input type="radio" name="">
+        <input type="text" name="name" id="name"><br>
+
+        <label for="inputTemperature">Input Temperature</label><br>
+        <input type="number" name="temperature" id="temperature"><br>
+
+        <label for="temperature_type">Temperature Type</label><br>
+        <input type="radio" name="temperature_method" id="celsius" value="Celsius">
+        <label for="celsius">Celsius</label><br>
+
+        <input type="radio" name="temperature_method" id="fahrenheit" value="Fahrenheit">
         <label for="fahrenheit">Fahrenheit</label><br>
-       
+
         <input type="submit" value="Submit">
     </form>
+
+
+
 </body>
+
 </html>
